@@ -35,4 +35,6 @@ Configuring Ubuntu and downloading:
 10. On Ubuntu: Test: `nc -vz 127.0.0.1 25565`
 11. On local machine: Test: `nc -vz <public ip> 25565`
 
+Idk why but on the first load of the instance, you might have to reboot your instance for UFW to actually work fully.
+
 
