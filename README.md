@@ -15,7 +15,7 @@ Set up instance:
 Set up networking:
 1. Here we are editing the VCN. Go to your instance and select Networking -> Scroll to Attached VNICs -> Select the first one
 2. We also want to make sure there is a public ip so just like youtube video that if you dont have a public ip
-3. Security -> Click on the default security list -> Security Rules
+3. Select the subnet -> Security -> Click on the default security list -> Security Rules
 4. Add Ingress Rules - **Source**: 0.0.0.0/0 **Protocol**: TCP **Destination Port Range**: 25565 **Else**: Leave Empty
 5. Add Ingress Rules - **Source**: 0.0.0.0/0 **Protocol**: UDP **Destination Port Range**: 25565 **Else**: Leave Empty
 6. Go back to Networking of Instance and make sure there are NO Network Security Groups if there is, remove it
