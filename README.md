@@ -21,7 +21,7 @@ Set up networking:
 6. Go back to Networking of Instance and make sure there are NO Network Security Groups if there is, remove it
 
 Configuring Ubuntu and downloading:
-1. SSH into the server using the downloaded private key and move it into ~/.ssh and then do `ssh -i ~/.ssh/oracle-key.key ubuntu@<public ip>`
+1. SSH into the server using the downloaded private key and move it into ~/.ssh make the permission to be able to ssh into `chmod 600 ~/.ssh/oracle-key.key` and then do `ssh -i ~/.ssh/oracle-key.key ubuntu@<public ip>`
 2. `apt update`
 3. ok im not going to go through the other apt gets but if the program is missing just apt get it
 4. `sudo ufw allow 22/tcp`
