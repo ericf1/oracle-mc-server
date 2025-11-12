@@ -24,14 +24,13 @@ Configuring Ubuntu and downloading:
 1. SSH into the server using the downloaded private key and move it into ~/.ssh make the permission to be able to ssh into `chmod 600 ~/.ssh/oracle-key.key` and then do `ssh -i ~/.ssh/oracle-key.key ubuntu@<public ip>`
 2. `apt update`
 3. ok im not going to go through the other apt gets but if the program is missing just apt get it
-4. `sudo ufw allow 22/tcp`
+4. `sudo apt install ufw -y` `sudo ufw allow 22/tcp`
 `sudo ufw allow 25565/tcp`
-`sudo ufw allow 25565/udp`
 `sudo ufw enable`
 5. Make a directory to download stuff into
 6. download by running the command from just the ftb website here: https://feed-the-beast.com/modpacks/server-files
-7. Follow instructions
-8. Create screen and run the bash so like `bash run.sh`
+7. Run the executable `./whateverfileitis`
+8. Create screen and run the bash so like `bash run.sh` on first run you have to write `true` to accept the eula
 9. Exit screen by doing ctrl-a + d
 10. On Ubuntu: Test: `nc -vz 127.0.0.1 25565`
 11. On local machine: Test: `nc -vz <public ip> 25565`
